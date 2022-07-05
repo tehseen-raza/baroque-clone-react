@@ -1,0 +1,17 @@
+.main-navbar-header {
+  background-color: #cdd3cc;
+  padding: 1.2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-txt {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.cart-item-count {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}
