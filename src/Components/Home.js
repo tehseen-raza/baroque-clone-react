@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
         <div className='text-center shop-link'>
-          <a href='#'>SHOP NOW</a>
+          <a href='/'>SHOP NOW</a>
         </div>
       </div>
       {/* ========================= */}
