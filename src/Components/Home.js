@@ -3,6 +3,7 @@ import Slide from '../Images/mainSlider.jpg'
 import "../App.css"
 import Categories from './Categories';
 import cardData from './CardData'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,19 +22,20 @@ const Home = () => {
           </div>
         </div>
         <div className='text-center shop-link'>
-          <a href='/'>SHOP NOW</a>
+          <Link to={Home}>SHOP NOW</Link>
         </div>
       </div>
       {/* ========================= */}
 
       {/* Cloting Categories */}
       <div className='cloting-categories'>
-        <div className="row row-cols-1 row-cols-md-3">
+        <div className="row row-cols-1 row-cols-md-3 gy-5">
           {
-            cardData.map((val, i) => {
+            cardData.map((index, i) => {
               return <Categories key={i}
-                imgSrc={val.caradImg}
-                title={val.cardTitle}
+                imgSrc={index.caradImg}
+                title={index.cardTitle}
+                url={index.URL}
               />
             })
           }

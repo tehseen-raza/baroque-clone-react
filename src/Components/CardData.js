@@ -7,28 +7,34 @@ import sixthImg from '../Images/dupattas.jpg'
 
 const cardData = [
     {
-        caradImg : firstImg,
-        cardTitle : "UN-STITCHED"
+        URL: 'https://www.unstiched.com/',
+        caradImg: firstImg,
+        cardTitle: "UN-STITCHED"
     },
     {
-        caradImg : secondImg,
-        cardTitle : "CHANTELLE FORMALS"
+        URL: 'https://www.chantelle.com/',
+        caradImg: secondImg,
+        cardTitle: "CHANTELLE FORMALS"
     },
     {
-        caradImg : thirdImg,
-        cardTitle : "EID-EDIT"
+        URL: 'https://www.eidedit.com/',
+        caradImg: thirdImg,
+        cardTitle: "EID-EDIT"
     },
     {
-        caradImg : fourthImg,
-        cardTitle : "FUCHSIA LAWN"
+        URL: 'https://www.fuchsia.com/',
+        caradImg: fourthImg,
+        cardTitle: "FUCHSIA LAWN"
     },
     {
-        caradImg : fifthImg,
-        cardTitle : "SWISS LAWN"
+        URL: 'https://www.swisslawn.com/',
+        caradImg: fifthImg,
+        cardTitle: "SWISS LAWN"
     },
     {
-        caradImg : sixthImg,
-        cardTitle : "DUPATTAS"
+        URL: 'https://www.dupattas.com/',
+        caradImg: sixthImg,
+        cardTitle: "DUPATTAS"
     }
 ];
 

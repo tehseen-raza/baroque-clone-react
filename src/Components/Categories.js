@@ -1,23 +1,26 @@
-import React from 'react'
-import "../App.css"
-import Category_img from "../Images/unstiched-cloth.jpg"
+import React from 'react';
+import '../App.css';
+import { Link } from 'react-router-dom';
 
 const Categories = (props) => {
     return (
         <>
-            <a href='#'>
-                <div className="col">
-                    <div className="card h-100 border-0">
-                        <img src={props.imgSrc} className="card-img-top" alt={Category_img} />
-                        <div className='card_content'>
-                            <h3 className="title_h3">{props.title}</h3>
-                            <a className='category_link' href='#'>SHOP NOW</a>
-                        </div>
+            <div className="col">
+                <div className="card h-100 border-0">
+                    <Link to={props.url}>
+                        <img src={props.imgSrc} className="card-img-top" alt="Category-Img" />
+                    </Link>
+                    <div className='card_content'>
+                        <h3 className="title_h3">{props.title}</h3>
+                        <Link to={props.url}>
+                            <span className='category_link' to='/'>SHOP NOW</span>
+                        </Link>
                     </div>
                 </div>
-            </a>
+            </div>
+
         </>
     )
 }
 
-export default Categories
+export default Categories;
