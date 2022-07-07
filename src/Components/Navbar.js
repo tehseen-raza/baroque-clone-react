@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <Link exact='true' to="/" className="navbar-brand">
-                        <img src={Logo} />
+                        <img src={Logo} alt='Logo' />
                     </Link>
                 </div>
                 <div className='header-icons d-flex align-items-center gap-1'>
