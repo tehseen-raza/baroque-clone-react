@@ -174,5 +174,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.socialIcon__item {
+  width: 1.5rem;
+}
+.socialItem_Link {
+  padding: 1rem;
+}
+.socialItem_Link:hover .icon {
+  transform: scale(1.07);
+}
 /* <===========================> */

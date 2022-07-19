@@ -1,9 +1,10 @@
 import React from 'react';
 import Slide from '../Images/mainSlider.jpg'
+import Slide_2 from '../Images/slide-2.jpg'
 import lookbookImg from '../Images/lookbook.jpg'
-import "../App.css"
+import '../App.css'
 import Categories from './Categories';
-import cardData from './CardData'
+import cardData from './CardData';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
@@ -17,7 +18,7 @@ const Home = () => {
             <img src={Slide} className="d-block w-100" alt="Slider-Img" />
           </div>
           <div className="carousel-item">
-            <img src={Slide} className="d-block w-100" alt="Slider Img" />
+            <img src={Slide_2} className="d-block w-100" alt="Slider Img" />
           </div>
           <div className="carousel-item">
             <img src={Slide} className="d-block w-100" alt="Slider Img" />
@@ -33,11 +34,12 @@ const Home = () => {
       <div className='clothing-categories'>
         <div className="row row-cols-1 row-cols-md-3 gy-5">
           {
-            cardData.map((index, i) => {
-              return <Categories key={i}
-                imgSrc={index.caradImg}
-                title={index.cardTitle}
-                url={index.URL}
+            cardData.map((item) => {
+              return <Categories
+                key={item.id}
+                imgSrc={item.cardImg}
+                title={item.cardTitle}
+                url={item.URL}
               />
             })
           }

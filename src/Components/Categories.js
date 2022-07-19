@@ -13,7 +13,8 @@ const Categories = (props) => {
                     <div className='card_content'>
                         <h3 className="title_h3">{props.title}</h3>
                         <Link to={props.url}>
-                            <span className='category_link' to='/'>SHOP NOW</span>
+                            {/* <span className='category_link' to='/'>SHOP NOW</span> */}
+                            <span className='category_link' to='/'>{props.itemPrice}</span>
                         </Link>
                     </div>
                 </div>
