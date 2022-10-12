@@ -11,16 +11,18 @@ import FuchsiaLawn from './Components/Collection/FuchsiaLawn';
 import SwissLawn from './Components/Collection/SwissLawn';
 import Dupattas from './Components/Collection/Dupattas';
 import Collection from "./Components/Collection";
+import UnstitchedSP1 from "./Components/Collection/UnstitchedSP1";
+// import Counter from "./Counter";
 
 
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/collection/unstitched" element={<Unstitched />} />
         <Route path="/collection/chantelle" element={<Chantelle />} />
@@ -30,8 +32,10 @@ function App() {
         <Route path="/collection/dupattas" element={<Dupattas />} />
         <Route path="/collection" element={<Collection />} />
         <Route path="/products" element={<Collection />} />
+        {/* <Route path="/counter" element={<Counter />} /> */}
+        <Route path="/products/printed-lawn-pr-620" element={<UnstitchedSP1 />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
